@@ -35,7 +35,7 @@
 
     // Handle operation button clicks
     operationButtons.forEach(button => {
-        button.addEventListener('clicks', () => {
+        button.addEventListener('click', () => {
             const op = button.getAttribute('data-operation');
             const current = parseFloat(currentDisplay);
             if (memory === null) {
@@ -105,9 +105,3 @@
             default: return b;
         }
     };
-
-
-    // const display = document.getElementById('display');
-    // const numberButtons = document.querySelectorAll('number')
-
-    // console.log(numberButtons)
